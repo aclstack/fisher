@@ -7,7 +7,7 @@ app.config.from_object('config')
 
 @app.route('/')
 def index():
-    return "Hello World2"
+    return "Hello World1"
 
 
 app.run(debug=app.config["DEBUG"])
