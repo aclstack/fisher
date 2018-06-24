@@ -3,7 +3,8 @@ import requests
 
 
 class HTTP:
-    def get(self, url, return_json=True):
+    @staticmethod       # 静态方法
+    def get(url, return_json=True):
         r = requests.get(url=url)
         # 判断返回状态码
         if r.status_code != 200:
